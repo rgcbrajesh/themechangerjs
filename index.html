@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Theme Changer</title>
+    <style>
+        div {
+            /* border:solid black 3px ; */
+            width: fit-content;
+            margin-left: 550px;
+            margin-top: 200px;
+        }
+
+        p {
+            text-align: center;
+            font-size: xx-large;
+            font-family: Arial;
+        }
+
+       
+
+        .dark-mode {
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <p>Hellow</p>
+        <button onclick="myFunction()">Light Theme</button>
+        <button onclick="myFunction()">Dark Theme</button>
+    </div>
+
+
+</body>
+
+</html>
+<script>
+    function myFunction() {
+        var element = document.body;
+        element.classList.toggle("dark-mode");
+    }
+</script>
